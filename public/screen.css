@@ -6,4 +6,40 @@ body {
   margin: 0;
   min-height: 100%;
   font: 16px / 1 sans-serif;
+  background-color: teal;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aqua; 
+  border: 5px solid teal;
+  padding: 1em;
+}
+
+p {
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+@media (min-width: 900px){
+  p {
+    font-size: 2em;
+  }
+ 
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sec2 {
+    flex: 1;
+  }
+
+  .sec3 {
+    flex: 2;
+  }
 }
